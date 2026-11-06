@@ -134,6 +134,30 @@ select:focus{
     color:var(--principal);
     text-decoration: none;
 }
+#mensagem{
+    text-align:center;
+    color:var(--principal);
+    font-weight:bold;
 
+}
+footer{
+    text-align: center;
+    padding: 20px;
+
+}
+/* Responsividade*/
+@media (max-width: 600px){
+    header{
+        flex-direction:column;
+
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .banner h2{
+        font-size: 27px;
+    }
+}
 
 
