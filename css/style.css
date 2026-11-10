@@ -1,38 +1,22 @@
-
-html{
-    font-size: 16px;
-
-}
 body{
-    margin:0;
-    background-color: #f3f4f6;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, sans-serif;
+    margin:20px;
 
 }
-.pai{
-    width: 90%;
-    min-width:260px;
-    padding:1.5em;
-    background-color: #2563eb;
-    color:white;
-    border-radius:0.75rem;
-    box-shadow:0 4PX 12px rgba( 0,0,0,0.2);
+    .linha{
+        display: flex;
+        gap:10px;
+    }
+    .caixa{
+        width: 33%;
+        height: 100px;
+        background-color: #2563eb;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+          
 
-
-}
-h1{
-    font-size:2rem;
-    margin-top: 0;
-
-}
-p{
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius:0.375rem;
-    background-color: white;
-    color:#2563eb;
-    cursor:pointer;
-    
-
-}
+                                                                        
