@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loja de roupas do Prof Dudu</title>
+    <title>Contato - Loja de Roupas</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
     <header>
-     <h1>👕loja de Roupa</h1>
-     </header>
-     <main class="carrossel">
-        
-        <div class="trilho">
-            
-            <div class="slide">
-            <img src="/img/images (1).jpg" alt="camiseta futebol">
-            <h2>camiseta</h2>
-            <p class="preço">R$ 200</p>
-            </div>
+        <h1>👕 Loja de Roupas</h1>
+    </header>
 
+    <main class="area-contato">
+        <form class="formulario">
 
-            </div class="slide">
-            <img src="/img/calca_masc_lycra_mm_amaciada_x03_535_1_86d23fce147eadb50045f8653b925af7.webp" alt="">
-            <h2>tenis</h2>
-            <p id="preço">R$99</p>
-            </div>
-            
+            <h2>Fale com a gente</h2>
 
-            </div class="slide">
-            <img src="/img/24a0ceba-8c13-45c6-b40c-4916e93ba778.webp" alt="">
-            <h2>vestido</h2>
-            <p class="preço">R$ 155,00</p>
-            <img src="/img/jaqueta-bomber-g-1-preto-1-e20c9ed571b6899f2217414692367249-1024-1024.webp" alt="">
-            <img src="/img/tenis_casual_bkr_ref_10440_45330_1_99a0c6e8c79e28cba5609427a2232b78.webp" alt="">
-            </div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3">
 
-            </div>
-            </main>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
 
-    
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(51) 99999-9999">
 
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" required>
 
+            <label for="tamanho">Tamanho (número de 34 a 46)</label>
+            <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex: 38">
 
+            <label for="produto">Produto de interesse</label>
+            <select id="produto" required>
+                <option value="">Escolha um produto</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="calca">Calça Jeans</option>
+                <option value="jaqueta">Jaqueta</option>
+                <option value="tenis">Tênis</option>
+                <option value="vestido">Vestido</option>
+            </select>
 
+            <fieldset>
+                <legend>Forma de contato preferida</legend>
+                <label><input type="radio" name="contato" value="email" checked> E-mail</label>
+                <label><input type="radio" name="contato" value="telefone"> Telefone</label>
+                <label><input type="radio" name="contato" value="whatsapp"> WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses</legend>
+                <label><input type="checkbox" name="interesse" value="promocoes"> Promoções</label>
+                <label><input type="checkbox" name="interesse" value="novidades"> Novidades</label>
+                <label><input type="checkbox" name="interesse" value="eventos"> Eventos</label>
+            </fieldset>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida" maxlength="200"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
 
 </body>
 </html>
